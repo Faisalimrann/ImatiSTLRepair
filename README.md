@@ -19,9 +19,6 @@ const repair = require('imati-stl-repair');
 await repair('INPUT_FILE_PATH','OUTPUT_FILE_PATH');
 ```
 
-## Limitations ?
-This package only works on windows OS.
-
 ## License
 
 MIT

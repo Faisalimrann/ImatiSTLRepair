@@ -4,8 +4,8 @@ const os = require('os');
 
 const ImatiSTL_COMMAND =
   os.platform() === 'darwin'
-    ? undefined
-    : path.join(__dirname, '..', 'libs/Windows/ImatiSTL/MeshFix.exe');
+    ? path.join(__dirname, '..', 'libs/macOS/MeshFix')
+    : path.join(__dirname, '..', 'libs/Windows/MeshFix.exe');
 
 function validateFilePath(filePath) {
   if (!fs.existsSync(filePath)) {
@@ -14,7 +14,6 @@ function validateFilePath(filePath) {
 }
 
 function buildRepairCommand(inputFilePath, outputFilePath) {
-  if (!ImatiSTL_COMMAND) console.warn('This package is not supported on macOS');
   return `${ImatiSTL_COMMAND} "${inputFilePath}" "${outputFilePath}"`;
 }
 
