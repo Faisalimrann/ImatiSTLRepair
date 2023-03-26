@@ -1,9 +1,14 @@
 {
   "name": "imati-stl-repair",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "It's a package for repairing stl files. It repairs non manifold stl files to manifold stl files.",
   "main": "src/index.js",
-  "keywords":["stl","stl repair","non manifold stl repair", "3d printable stl file repairing"],
+  "keywords": [
+    "stl",
+    "stl repair",
+    "non manifold stl repair",
+    "3d printable stl file repairing"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

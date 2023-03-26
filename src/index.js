@@ -1,6 +1,7 @@
 const path = require('path');
 const shell = require('shelljs');
 const os = require('os');
+const fs = require('fs');
 
 const ImatiSTL_COMMAND =
   os.platform() === 'darwin'
@@ -24,7 +25,7 @@ async function repair(inputFilePath, outputFilePath) {
 
   return new Promise((resolve, reject) => {
     shell.exec(command, (code, output, error) => {
-      if (error) {
+      if (code) {
         reject(new Error(`Failed to repair file: ${error}`));
       } else {
         resolve(outputFilePath);
