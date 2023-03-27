@@ -5,7 +5,7 @@ imati-stl-repair is a node package that is based on the ImatiSTL. ImatiSTL is a 
 ## Installation
 Installation using yarn
 ```sh
-yarn imati-stl-repair
+yarn add imati-stl-repair
 ```
 Installation using npm
 ```sh
